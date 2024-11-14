@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Review</title>
+</head>
+<body>
+    <h1>Edit Review</h1>
+    <form action="/review/<%= review.id %>/update" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="placeId" value="<%= review.place_id %>">
+        <label for="reviewText">Review Text:</label>
+        <textarea name="reviewText" id="reviewText" rows="4"><%= review.text %></textarea>
+    
+        <label for="reviewImage">Update Image (optional):</label>
+        <input type="file" name="reviewImage" id="reviewImage">
+        
+        <% if (review.image) { %>
+            <p>Current Image:</p>
+            <img src="<%= review.image %>" alt="Review Image" style="max-width: 200px;">
+        <% } %>
+        
+        <button type="submit">Update Review</button>
+    </form>
+</body>
+</html>
