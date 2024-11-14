@@ -70,3 +70,7 @@ CREATE TABLE reviews (
   CONSTRAINT reviews_ibfk_2 FOREIGN KEY (user_id) REFERENCES users (id)
 );
 ```
+---
+
+> [!IMPORTANT]
+> Don't forget to change your password to be the same as your MySQL.
