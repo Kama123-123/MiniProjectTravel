@@ -1,6 +1,6 @@
-##Setup
+## Setup
 
-#install
+# install
 
 1 Creat json file
 npm init -y
@@ -8,7 +8,7 @@ npm init -y
 2 Install necessary packages.
 npm install express mysql2 express-session ejs multer bcrypt
 
-#SQL
+# SQL
 Creat database
 
 CREATE TABLE users (
