@@ -1,26 +1,42 @@
 # Setup
+Follow these steps to set up and run the project locally.
 
 ## install
 
 1 Creat json file
+
+```
 npm init -y
+```
+
+---
 
 2  Install Dependencies
 Install the necessary packages to get the project running:
 
-bash
-Copy code
+```
 npm install express mysql2 express-session ejs multer bcrypt
+```
+
 Express: Web framework for building the server.
+
 MySQL2: Library for connecting to MySQL database.
+
 Express-session: Middleware for managing user sessions.
+
 EJS: Templating engine to render HTML views.
+
 Multer: Middleware for handling file uploads.
+
 Bcrypt: Library for password hashing.
 
-#$ SQL
+
+---
+
+3 SQL
 Creat database
 
+```
 CREATE TABLE users (
   id int NOT NULL AUTO_INCREMENT,
   username varchar(50) NOT NULL,
@@ -53,3 +69,4 @@ CREATE TABLE reviews (
   CONSTRAINT reviews_ibfk_1 FOREIGN KEY (place_id) REFERENCES places (id),
   CONSTRAINT reviews_ibfk_2 FOREIGN KEY (user_id) REFERENCES users (id)
 );
+```
