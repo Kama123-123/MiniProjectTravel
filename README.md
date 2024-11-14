@@ -1,14 +1,24 @@
-## Setup
+# Setup
 
-# install
+## install
 
 1 Creat json file
 npm init -y
 
-2 Install necessary packages.
-npm install express mysql2 express-session ejs multer bcrypt
+2  Install Dependencies
+Install the necessary packages to get the project running:
 
-# SQL
+bash
+Copy code
+npm install express mysql2 express-session ejs multer bcrypt
+Express: Web framework for building the server.
+MySQL2: Library for connecting to MySQL database.
+Express-session: Middleware for managing user sessions.
+EJS: Templating engine to render HTML views.
+Multer: Middleware for handling file uploads.
+Bcrypt: Library for password hashing.
+
+#$ SQL
 Creat database
 
 CREATE TABLE users (
